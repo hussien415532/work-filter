@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 40px auto;
+  padding: 0px 20px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+ul li {
+  cursor: pointer;
+  padding: 5px 8px;
+  background-color: #f98686;
+  color: white;
+  border-radius: 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+ul li:hover,
+.active {
+  background-color: #ff4444;
+}
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.category .all {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+.category .art {
+  background-color: #3cc5d3;
+}
+.category .game {
+  background-color: #92fdb3;
+}
+.category .edu {
+  background-color: #91b8ff;
+}
+.category img {
+  width: 200px;
+}
+@media (max-width: 767px) {
+  .category img {
+    width: 140px;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    padding: 0px 130px;
+  }
+}
