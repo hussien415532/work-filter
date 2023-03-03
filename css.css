@@ -40,6 +40,7 @@ ul li:hover,
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+ 
 }
 .category .all {
   border-radius: 6px;
@@ -48,7 +49,19 @@ ul li:hover,
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   padding: 10px;
-  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.category .all:hover
+{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 .category .art {
   background-color: #a7f7ff;
